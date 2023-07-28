@@ -190,8 +190,8 @@ int main(int argc, char **argv)
     bool is_cuda = argc > 1 && strcmp(argv[1], "cuda") == 0;
     std::cout << "The current OpenCV version is " << CV_VERSION << "\n";
     //cv::VideoCapture capture("sample1.mp4",cv::CAP_FFMPEG);
-    const std::string RTSP_URL = "rtsp://service:service@172.196.129.152:554/ufirststream?inst=2"; //BEL MAIN GATE CAMERA
-    //const std::string RTSP_URL = "rtsp://172.196.128.151:554/1/h264minor"; //BSTC CAMERA
+    const std::string RTSP_URL = "rtsp://service:service@172.196.129.152:554/ufirststream?inst=2"; 
+    //const std::string RTSP_URL = "rtsp://172.196.128.151:554/1/h264minor"; 
     setenv("OPENCV_FFMPEG_CAPTURE_OPTIONS", "rtsp_transport;tcp", 1);
     cv::VideoCapture capture(RTSP_URL,cv::CAP_FFMPEG);
     if(!capture.isOpened())
