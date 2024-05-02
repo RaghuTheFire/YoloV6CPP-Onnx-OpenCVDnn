@@ -6,4 +6,4 @@ YOLOv6 is a recent addition to the long line of state-of-the-art object detectio
 Add the model yolov6s.onnx in config_files folder 
 
 # Compilation Command
-g++ yolov6.cpp -o yolov6 `pkg-config --cflags --libs opencv4`
+g++ YoloV6.cpp -o YoloV6 `pkg-config --cflags --libs opencv4`
