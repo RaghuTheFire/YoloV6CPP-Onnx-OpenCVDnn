@@ -1,4 +1,4 @@
-//g++ yolov6.cpp -o yolov6 `pkg-config --cflags --libs opencv4`
+//g++ YoloV6.cpp -o YoloV6 `pkg-config --cflags --libs opencv4`
 #include <fstream>
 #include <sstream>
 #include <iostream>
